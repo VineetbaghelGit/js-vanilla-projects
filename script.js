@@ -23,6 +23,16 @@ const defaultProjects = [
     jsFile: "snake-game/snake-game.js",
     tags: ["Game", "Arcade", "Interactive"],
   },
+  {
+    id: 3,
+    name: "Pomodoro Timer",
+    emoji: "⏱️",
+    description:
+      "Classic snake game where you control a snake and eat food to grow longer.",
+    file: "pomodoro-timer/index.html",
+    jsFile: "pomodoro-timer/pomodoro-timer.js",
+    tags: ["Game", "Arcade", "Interactive"],
+  },
 ];
 
 // Initialize
