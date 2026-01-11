@@ -523,7 +523,7 @@ body {
   }
 
   .code-content {
-    max-height: 350px;
+    max-height: 65vh;
   }
 
   .code-content code {
