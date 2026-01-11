@@ -133,6 +133,9 @@ async function openProject(id) {
       <div class="code-viewer">
         <div class="project-info">
           <h3>${project.emoji} ${project.name}</h3>
+            <a href="${
+            project.file
+          }" target="_blank" class="">View Output</a>
         </div>
 
         <div class="code-tabs">
@@ -152,13 +155,7 @@ async function openProject(id) {
           )}</code></pre>
         </div>
 
-        <div class="code-actions">
-          <a href="${
-            project.file
-          }" target="_blank" class="btn btn-primary">Open Game</a>
-          <button class="btn btn-primary" onclick="copyToClipboard('html-tab')">Copy HTML</button>
-          <button class="btn btn-primary" onclick="copyToClipboard('js-tab')">Copy JS</button>
-        </div>
+       
       </div>
     `;
 

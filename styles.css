@@ -274,15 +274,21 @@ body {
 
 .project-info {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .project-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
   color: var(--text);
 }
-
+.project-info a{
+  color: var(--text);
+  font-size: 14px; 
+}
 .project-meta {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -421,6 +427,9 @@ body {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
+  .project-info{
+    display: block;
+  }
   .nav-content {
     flex-direction: column;
     gap: 1rem;
@@ -514,7 +523,7 @@ body {
   }
 
   .code-content {
-    max-height: 250px;
+    max-height: 350px;
   }
 
   .code-content code {
