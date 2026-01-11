@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Vanilla JS Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Highlight.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">📚 JS Projects</h1>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>My Vanilla JavaScript Projects</h2>
+            <p>A collection of interactive games and projects built with HTML, CSS, and vanilla JavaScript</p>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <p>No projects yet. Create your first project to get started!</p>
+        </div>
+    </main>
+
+    <!-- Project Details Modal with Code Viewer -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content modal-code-viewer">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Project Form Modal -->
+    <div class="modal" id="addProjectModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAddBtn">&times;</span>
+         
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
